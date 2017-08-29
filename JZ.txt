@@ -1,0 +1,44 @@
+CREATE PROCEDURE jz
+
+AS
+
+declare @accountterm as nvarchar(6)
+declare @id as int
+declare @cd as int
+
+begin tran jz
+
+--update t_month_date set state='fdsa'
+
+SELECT top 1 @accountterm=accountterm,@id=id,@cd=DATEDIFF ( d ,begin_date , getdate() ) 
+FROM t_MonthEnd_date
+where state=0 
+order by accountterm 
+
+if @cd=0
+    begin
+
+	update t_MonthEnd_date set state=1 where state=2
+	update t_MonthEnd_date set state=2 where id=@id
+	
+	INSERT INTO T_part_history ( AccountTerm,amount,bh_no,Depot_Code,item_id,packing_id,qc_amount,standards_id) 
+	select  AccountTerm,amount,bh_no,Depot_Code,item_id,packing_id,qc_amount,standards_id from t_part
+	
+	update t_part set qc_amount=amount,AccountTerm=@AccountTerm
+	
+	
+	
+	INSERT INTO t_stockbill_master_history ( AccountTerm,BillDate,BillKindCode,BillNo,Depot_Code,input_date,input_man,TempFlag,Type) 
+	select  AccountTerm,BillDate,BillKindCode,BillNo,Depot_Code,input_date,input_man,TempFlag,Type from t_stockbill_master
+	
+	delete from t_stockbill_master
+	
+	INSERT INTO t_stockbill_detail_history ( Amount,amount_jian,bh_no,BillNo,h_amount,item_id,packing_id,q_amount,ResourceID,ResourceNo,sourceflag,standards_id) 
+	select Amount,amount_jian,bh_no,BillNo,h_amount,item_id,packing_id,q_amount,ResourceID,ResourceNo,sourceflag,standards_id from t_stockbill_detail
+	
+	delete from t_stockbill_detail
+	
+	update t_dj_num set num=0
+    end
+commit tran jz
+GO

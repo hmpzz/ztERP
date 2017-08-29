@@ -1,0 +1,1889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA0CD351-2DF7-4948-A8E7-F531BEDC88D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>erp.My.MyApplication</StartupObject>
+    <RootNamespace>erp</RootNamespace>
+    <AssemblyName>展特工程核算系统</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>GANT1.ico</ApplicationIcon>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>展特工程核算系统.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>展特工程核算系统.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseClass, Version=1.0.5135.28781, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\BaseClass.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPForm.Designer.vb">
+      <DependentUpon>MDIPForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIPForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="人事\员工资料维护\employee.Designer.vb">
+      <DependentUpon>employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="人事\员工资料维护\employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事\员工资料维护\employee_cha.Designer.vb">
+      <DependentUpon>employee_cha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="人事\员工资料维护\employee_cha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事\考勤\考勤审核\KQ_check.Designer.vb">
+      <DependentUpon>KQ_check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="人事\考勤\考勤审核\KQ_check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事\考勤\考勤录入\KQ.Designer.vb">
+      <DependentUpon>KQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="人事\考勤\考勤录入\KQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事\考勤\考勤录入\KQ_add.Designer.vb">
+      <DependentUpon>KQ_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="人事\考勤\考勤录入\KQ_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事\考勤\考勤录入\KQ_cha.Designer.vb">
+      <DependentUpon>KQ_cha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="人事\考勤\考勤录入\KQ_cha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事\考勤\考勤录入\rs_choice.Designer.vb">
+      <DependentUpon>rs_choice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="人事\考勤\考勤录入\rs_choice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事\考勤\考勤查询\KQ_quality.Designer.vb">
+      <DependentUpon>KQ_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="人事\考勤\考勤查询\KQ_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人事\部门资料维护\department.Designer.vb">
+      <DependentUpon>department.vb</DependentUpon>
+    </Compile>
+    <Compile Include="人事\部门资料维护\department.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\入库\入库重置\warehouse_undo.Designer.vb">
+      <DependentUpon>warehouse_undo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\入库\入库重置\warehouse_undo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\入库\移库入库\YKD_in.Designer.vb">
+      <DependentUpon>YKD_in.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\入库\移库入库\YKD_in.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\入库\退料入库\t_part_in_TL.Designer.vb">
+      <DependentUpon>t_part_in_TL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\入库\退料入库\t_part_in_TL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\入库\采购入库\part_in_CG.Designer.vb">
+      <DependentUpon>part_in_CG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\入库\采购入库\part_in_CG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\入库\采购入库\part_in_CG_RPT_T.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>part_in_CG_RPT_T.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\入库\采购入库\part_in_CG_RPT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>part_in_CG_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="仓库\入库\采购入库\print_time.Designer.vb">
+      <DependentUpon>print_time.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\入库\采购入库\print_time.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\出库\出库重置\warehouse_undo_CK.Designer.vb">
+      <DependentUpon>warehouse_undo_CK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\出库\出库重置\warehouse_undo_CK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\出库\移库出库\yk_out.Designer.vb">
+      <DependentUpon>yk_out.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\出库\移库出库\yk_out.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\出库\领料出库\part_out_LL.Designer.vb">
+      <DependentUpon>part_out_LL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\出库\领料出库\part_out_LL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\出库\领料出库\part_out_LL_RPT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>part_out_LL_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="仓库\出库\领料出库\part_out_LL_RPT_T.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>part_out_LL_RPT_T.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\移库单\由领料单生成移库单\LL_YKD.Designer.vb">
+      <DependentUpon>LL_YKD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\移库单\由领料单生成移库单\LL_YKD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\移库单\移库单审核\YKD_check.Designer.vb">
+      <DependentUpon>YKD_check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\移库单\移库单审核\YKD_check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\移库单\移库单建立\YKD.Designer.vb">
+      <DependentUpon>YKD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\移库单\移库单建立\YKD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\移库单\移库单查询\YKD_quality.Designer.vb">
+      <DependentUpon>YKD_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\移库单\移库单查询\YKD_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\调帐单\TZD.Designer.vb">
+      <DependentUpon>TZD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\调帐单\TZD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\调帐单\tzd_mod.Designer.vb">
+      <DependentUpon>tzd_mod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\调帐单\tzd_mod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="公用\printView.Designer.vb">
+      <DependentUpon>printView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="公用\printView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="公用\warehouse_amount.Designer.vb">
+      <DependentUpon>warehouse_amount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="公用\warehouse_amount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据\仓库\人员仓库对应关系\t_user_depot.Designer.vb">
+      <DependentUpon>t_user_depot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据\仓库\人员仓库对应关系\t_user_depot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据\仓库\仓库资料\deport_info.Designer.vb">
+      <DependentUpon>deport_info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据\仓库\仓库资料\deport_info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据\工厂\人员对应工厂\t_user_factory.Designer.vb">
+      <DependentUpon>t_user_factory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据\工厂\人员对应工厂\t_user_factory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据\工厂\工厂资料\factory_info.Designer.vb">
+      <DependentUpon>factory_info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据\工厂\工厂资料\factory_info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据\技术\物料设置\Item_add.Designer.vb">
+      <DependentUpon>Item_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据\技术\物料设置\Item_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据\采购\供应商信息\supplier.Designer.vb">
+      <DependentUpon>supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据\采购\供应商信息\supplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础数据\销售\客户信息\customer.Designer.vb">
+      <DependentUpon>customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="基础数据\销售\客户信息\customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\加工费\加工费审核\t_outwork_check.Designer.vb">
+      <DependentUpon>t_outwork_check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\加工费\加工费审核\t_outwork_check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\加工费\加工费建立\t_outwork.Designer.vb">
+      <DependentUpon>t_outwork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\加工费\加工费建立\t_outwork.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\加工费\加工费建立\t_outwork_add.Designer.vb">
+      <DependentUpon>t_outwork_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\加工费\加工费建立\t_outwork_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\加工费\加工费建立\t_outwork_detail_add.Designer.vb">
+      <DependentUpon>t_outwork_detail_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\加工费\加工费建立\t_outwork_detail_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\加工费\加工费建立\t_outwork_RPT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>t_outwork_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="工程\加工费\加工费建立\t_outwork_RPT_T.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>t_outwork_RPT_T.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="工程\加工费\加工费打印重置\t_outwork_print_resetting.Designer.vb">
+      <DependentUpon>t_outwork_print_resetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\加工费\加工费打印重置\t_outwork_print_resetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\加工费\加工费查询\t_outwork_quality.Designer.vb">
+      <DependentUpon>t_outwork_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\加工费\加工费查询\t_outwork_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单完工设置\project_WG.Designer.vb">
+      <DependentUpon>project_WG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单完工设置\project_WG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单审核\project_check.Designer.vb">
+      <DependentUpon>project_check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单审核\project_check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单审核\project_YQ.Designer.vb">
+      <DependentUpon>project_YQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单审核\project_YQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单建立\CG_RPT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CG_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单建立\GC_T.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GC_T.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单建立\project.Designer.vb">
+      <DependentUpon>project.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单建立\project.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单建立\project_add.Designer.vb">
+      <DependentUpon>project_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单建立\project_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单建立\project_detail_add.Designer.vb">
+      <DependentUpon>project_detail_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单建立\project_detail_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单查询\project_quality.Designer.vb">
+      <DependentUpon>project_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\工程单\工程审批单查询\project_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\生产单\下单\下单审核\XDSH.Designer.vb">
+      <DependentUpon>XDSH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\生产单\下单\下单审核\XDSH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\生产单\下单\下单建立\XDJL.Designer.vb">
+      <DependentUpon>XDJL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\生产单\下单\下单建立\XDJL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\生产单\下单\下单建立\XDJL_add.Designer.vb">
+      <DependentUpon>XDJL_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\生产单\下单\下单建立\XDJL_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\生产单\下单\下单查询\XDCX.Designer.vb">
+      <DependentUpon>XDCX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\生产单\下单\下单查询\XDCX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\生产单\下单\确认完成\QRWC.Designer.vb">
+      <DependentUpon>QRWC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\生产单\下单\确认完成\QRWC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\生产单\接单\接单价格确认\input_JG.Designer.vb">
+      <DependentUpon>input_JG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\生产单\接单\接单价格确认\input_JG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\生产单\接单\接单价格确认\JDJGQR.Designer.vb">
+      <DependentUpon>JDJGQR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\生产单\接单\接单价格确认\JDJGQR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\生产单\接单\接单完成\JDWC.Designer.vb">
+      <DependentUpon>JDWC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\生产单\接单\接单完成\JDWC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\生产单\接单\接单确认\JDQR.Designer.vb">
+      <DependentUpon>JDQR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\生产单\接单\接单确认\JDQR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\行政费用单\行政费用单审核\XZFY_check.Designer.vb">
+      <DependentUpon>XZFY_check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\行政费用单\行政费用单审核\XZFY_check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\行政费用单\行政费用单建立\XZFY_add_BM.Designer.vb">
+      <DependentUpon>XZFY_add_BM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\行政费用单\行政费用单建立\XZFY_add_BM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\行政费用单\行政费用单建立\XZFYD.Designer.vb">
+      <DependentUpon>XZFYD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\行政费用单\行政费用单建立\XZFYD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\行政费用单\行政费用单建立\XZFYD_add.Designer.vb">
+      <DependentUpon>XZFYD_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\行政费用单\行政费用单建立\XZFYD_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\行政费用单\行政费用单建立\XZFYD_add_detail.Designer.vb">
+      <DependentUpon>XZFYD_add_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\行政费用单\行政费用单建立\XZFYD_add_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\行政费用单\行政费用单查询\XZFY_CX.Designer.vb">
+      <DependentUpon>XZFY_CX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\行政费用单\行政费用单查询\XZFY_CX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\费用单\费用单审核\t_outlay_check.Designer.vb">
+      <DependentUpon>t_outlay_check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\费用单\费用单审核\t_outlay_check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\费用单\费用单建立\FYD_RPT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FYD_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="工程\费用单\费用单建立\FYD_T.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FYD_T.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="工程\费用单\费用单建立\t_outlay.Designer.vb">
+      <DependentUpon>t_outlay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\费用单\费用单建立\t_outlay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\费用单\费用单建立\t_outlay_add.Designer.vb">
+      <DependentUpon>t_outlay_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\费用单\费用单建立\t_outlay_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\费用单\费用单建立\t_outlay_add_detail.Designer.vb">
+      <DependentUpon>t_outlay_add_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\费用单\费用单建立\t_outlay_add_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\费用单\费用单建立\t_outlay_add_project.Designer.vb">
+      <DependentUpon>t_outlay_add_project.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\费用单\费用单建立\t_outlay_add_project.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\费用单\费用单打印重置\t_outlay_print_resetting.Designer.vb">
+      <DependentUpon>t_outlay_print_resetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\费用单\费用单打印重置\t_outlay_print_resetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\费用单\费用单查询\t_outlay_quality.Designer.vb">
+      <DependentUpon>t_outlay_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\费用单\费用单查询\t_outlay_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\退库单\退库单审核\t_part_in_check.Designer.vb">
+      <DependentUpon>t_part_in_check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\退库单\退库单审核\t_part_in_check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\退库单\退库单建立\t_part_in.Designer.vb">
+      <DependentUpon>t_part_in.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\退库单\退库单建立\t_part_in.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\退库单\退库单建立\t_part_in_add.Designer.vb">
+      <DependentUpon>t_part_in_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\退库单\退库单建立\t_part_in_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\退库单\退库单查询\t_part_in_quality.Designer.vb">
+      <DependentUpon>t_part_in_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\退库单\退库单查询\t_part_in_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\领料单\领料单审核\t_part_out_check.Designer.vb">
+      <DependentUpon>t_part_out_check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\领料单\领料单审核\t_part_out_check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\退库单\退库单建立\t_part_in_add_detail.Designer.vb">
+      <DependentUpon>t_part_in_add_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\退库单\退库单建立\t_part_in_add_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\领料单\领料单建立\t_part_out.Designer.vb">
+      <DependentUpon>t_part_out.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\领料单\领料单建立\t_part_out.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\领料单\领料单建立\t_part_out_add.Designer.vb">
+      <DependentUpon>t_part_out_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\领料单\领料单建立\t_part_out_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\领料单\领料单建立\t_part_out_add_detail.Designer.vb">
+      <DependentUpon>t_part_out_add_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\领料单\领料单建立\t_part_out_add_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工程\领料单\领料单查询\t_part_out_quality.Designer.vb">
+      <DependentUpon>t_part_out_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="工程\领料单\领料单查询\t_part_out_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\产值查询\project_CZ_quality.Designer.vb">
+      <DependentUpon>project_CZ_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\产值查询\project_CZ_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\仓库综合查询\CK_ZHCX.Designer.vb">
+      <DependentUpon>CK_ZHCX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\仓库综合查询\CK_ZHCX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\仓库综合查询\CK_ZHCX_cha.Designer.vb">
+      <DependentUpon>CK_ZHCX_cha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\仓库综合查询\CK_ZHCX_cha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\供应商付款详情查询\T_GHFK_detail_quality.Designer.vb">
+      <DependentUpon>T_GHFK_detail_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\供应商付款详情查询\T_GHFK_detail_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\供货商付款情况查询\T_GHFK_quality.Designer.vb">
+      <DependentUpon>T_GHFK_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\供货商付款情况查询\T_GHFK_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\供货入库明细查询\T_GHMX_quality.Designer.vb">
+      <DependentUpon>T_GHMX_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\供货入库明细查询\T_GHMX_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\供货商付款情况查询\T_GHFK_quality_condition.Designer.vb">
+      <DependentUpon>T_GHFK_quality_condition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\供货商付款情况查询\T_GHFK_quality_condition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\加工费明细查询\JGF_detail_question.Designer.vb">
+      <DependentUpon>JGF_detail_question.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\加工费明细查询\JGF_detail_question.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\工程查询\project_detail_quality.Designer.vb">
+      <DependentUpon>project_detail_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\工程查询\project_detail_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\工程查询\project_detail_quality_cha.Designer.vb">
+      <DependentUpon>project_detail_quality_cha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\工程查询\project_detail_quality_cha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\工程账务信息查询\project_account_quility.Designer.vb">
+      <DependentUpon>project_account_quility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\工程账务信息查询\project_account_quility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\库存查询\warehouse_question.Designer.vb">
+      <DependentUpon>warehouse_question.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\库存查询\warehouse_question.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\库存查询\warehouse_question_cha.Designer.vb">
+      <DependentUpon>warehouse_question_cha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\库存查询\warehouse_question_cha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\库存查询\warehouse_question_RPT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>warehouse_question_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="查询\库存查询\warehouse_question_T.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>warehouse_question_T.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="查询\库存每月结转查询\T_KCMYJZ_question.Designer.vb">
+      <DependentUpon>T_KCMYJZ_question.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\库存每月结转查询\T_KCMYJZ_question.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\报表查询\report_question.Designer.vb">
+      <DependentUpon>report_question.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\报表查询\report_question.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\收款查询\T_JEYS_query.Designer.vb">
+      <DependentUpon>T_JEYS_query.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\收款查询\T_JEYS_query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\物料查询供应商\GoodsQuesonGYS.Designer.vb">
+      <DependentUpon>GoodsQuesonGYS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\物料查询供应商\GoodsQuesonGYS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\调帐记录查询\t_tzd_cx.Designer.vb">
+      <DependentUpon>t_tzd_cx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\调帐记录查询\t_tzd_cx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\费用单明细查询\FYD_detail_question.Designer.vb">
+      <DependentUpon>FYD_detail_question.vb</DependentUpon>
+    </Compile>
+    <Compile Include="查询\费用单明细查询\FYD_detail_question.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\月结日期设定\sys_month.Designer.vb">
+      <DependentUpon>sys_month.vb</DependentUpon>
+    </Compile>
+    <Compile Include="系统\月结日期设定\sys_month.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\月结日期设定\sys_month_SC.Designer.vb">
+      <DependentUpon>sys_month_SC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="系统\月结日期设定\sys_month_SC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\月结日期设定\sys_month_TZ.Designer.vb">
+      <DependentUpon>sys_month_TZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="系统\月结日期设定\sys_month_TZ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\系统用户权限\add_user.Designer.vb">
+      <DependentUpon>add_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="系统\系统用户权限\add_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\系统用户权限\copy_user_right.Designer.vb">
+      <DependentUpon>copy_user_right.vb</DependentUpon>
+    </Compile>
+    <Compile Include="系统\系统用户权限\copy_user_right.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\系统用户权限\rs_list.Designer.vb">
+      <DependentUpon>rs_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="系统\系统用户权限\rs_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\系统用户权限\sys_user_right.Designer.vb">
+      <DependentUpon>sys_user_right.vb</DependentUpon>
+    </Compile>
+    <Compile Include="系统\系统用户权限\sys_user_right.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\系统角色权限\role_add.Designer.vb">
+      <DependentUpon>role_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="系统\系统角色权限\role_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\系统角色权限\sys_role_right.Designer.vb">
+      <DependentUpon>sys_role_right.vb</DependentUpon>
+    </Compile>
+    <Compile Include="系统\系统角色权限\sys_role_right.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="视图\更改密码\newpassword.Designer.vb">
+      <DependentUpon>newpassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="视图\更改密码\newpassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应付\应付发票审核\t_FPYF_check.Designer.vb">
+      <DependentUpon>t_FPYF_check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应付\应付发票审核\t_FPYF_check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应付\应付发票查询\t_FPYF_question_cha.Designer.vb">
+      <DependentUpon>t_FPYF_question_cha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应付\应付发票查询\t_FPYF_question_cha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应付\应付发票建立\FPYF_cha.Designer.vb">
+      <DependentUpon>FPYF_cha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应付\应付发票建立\FPYF_cha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票建立\FPYS_RPT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FPYS_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票建立\FPYS_T.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FPYS_T.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应付\应付发票建立\t_FPYF.Designer.vb">
+      <DependentUpon>t_FPYF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应付\应付发票建立\t_FPYF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应付\应付发票建立\T_FPYF_add.Designer.vb">
+      <DependentUpon>T_FPYF_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应付\应付发票建立\T_FPYF_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应付\应付发票建立\T_FPYF_add_detail.Designer.vb">
+      <DependentUpon>T_FPYF_add_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应付\应付发票建立\T_FPYF_add_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应付\应付发票建立\T_FPYF_add_JGD_detail.Designer.vb">
+      <DependentUpon>T_FPYF_add_JGD_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应付\应付发票建立\T_FPYF_add_JGD_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应付\应付发票查询\t_FPYF_question.Designer.vb">
+      <DependentUpon>t_FPYF_question.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应付\应付发票查询\t_FPYF_question.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应付\应付发票核销\T_FPYF_HX.Designer.vb">
+      <DependentUpon>T_FPYF_HX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应付\应付发票核销\T_FPYF_HX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票审核\t_FPYS_check.Designer.vb">
+      <DependentUpon>t_FPYS_check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票审核\t_FPYS_check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票建立\T_FPYS.Designer.vb">
+      <DependentUpon>T_FPYS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票建立\T_FPYS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票建立\T_FPYS_add.Designer.vb">
+      <DependentUpon>T_FPYS_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票建立\T_FPYS_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票建立\T_FPYS_add_detail.Designer.vb">
+      <DependentUpon>T_FPYS_add_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票建立\T_FPYS_add_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票查询\t_FPYS_question.Designer.vb">
+      <DependentUpon>t_FPYS_question.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票查询\t_FPYS_question.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票核销\t_FPYS_HX.Designer.vb">
+      <DependentUpon>t_FPYS_HX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票核销\t_FPYS_HX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票核销\t_FPYS_HX_mod.Designer.vb">
+      <DependentUpon>t_FPYS_HX_mod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收发票\应收发票核销\t_FPYS_HX_mod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额审核\T_jeys_check.Designer.vb">
+      <DependentUpon>T_jeys_check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额审核\T_jeys_check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额建立\T_JEYS.Designer.vb">
+      <DependentUpon>T_JEYS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额建立\T_JEYS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额建立\T_JEYS_add.Designer.vb">
+      <DependentUpon>T_JEYS_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额建立\T_JEYS_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额建立\T_JEYS_add_detail.Designer.vb">
+      <DependentUpon>T_JEYS_add_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额建立\T_JEYS_add_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额建立\T_JEYS_RPT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>T_JEYS_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额建立\T_JEYS_T.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>T_JEYS_T.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额建立\T_JEYS_T.vb">
+      <DependentUpon>T_JEYS_T.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额查询\t_JEYS_question.Designer.vb">
+      <DependentUpon>t_JEYS_question.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额查询\t_JEYS_question.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额核销\t_jeys_HX.Designer.vb">
+      <DependentUpon>t_jeys_HX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="财务\应收\应收金额\应收金额核销\t_jeys_HX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同审核\purchase_sh.Designer.vb">
+      <DependentUpon>purchase_sh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同审核\purchase_sh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\GHHT_RPT.vb">
+      <DependentUpon>GHHT_RPT.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\GHHT_RPT_T.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GHHT_RPT_T.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\purchase.Designer.vb">
+      <DependentUpon>purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\purchase_add.Designer.vb">
+      <DependentUpon>purchase_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\purchase_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\purchase_add_project.Designer.vb">
+      <DependentUpon>purchase_add_project.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\purchase_add_project.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\purchase_cha.Designer.vb">
+      <DependentUpon>purchase_cha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\purchase_cha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\purchase_detail_add.Designer.vb">
+      <DependentUpon>purchase_detail_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\purchase_detail_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\purchase_warehouse.Designer.vb">
+      <DependentUpon>purchase_warehouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同建立\purchase_warehouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同查询\purchase_quality.Designer.vb">
+      <DependentUpon>purchase_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同查询\purchase_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同结案\purchase_JA.Designer.vb">
+      <DependentUpon>purchase_JA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\供货合同\供货合同结案\purchase_JA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单审核\CGSQ_SH.Designer.vb">
+      <DependentUpon>CGSQ_SH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单审核\CGSQ_SH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单建立\CGSQ_add_detail.Designer.vb">
+      <DependentUpon>CGSQ_add_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单建立\CGSQ_add_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单建立\CGSQ_RPT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CGSQ_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单建立\CGSQ_RPT_T.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CGSQ_RPT_T.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单建立\CGSQ_warehouse.Designer.vb">
+      <DependentUpon>CGSQ_warehouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单建立\CGSQ_warehouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单建立\CGSQ.Designer.vb">
+      <DependentUpon>CGSQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单建立\CGSQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单建立\CGSQ_add.Designer.vb">
+      <DependentUpon>CGSQ_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单建立\CGSQ_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单建立\CGSQ_add_project.Designer.vb">
+      <DependentUpon>CGSQ_add_project.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单建立\CGSQ_add_project.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单查询\CGSQ_quality.Designer.vb">
+      <DependentUpon>CGSQ_quality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单查询\CGSQ_quality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单转加工单\CGSQ_JGD.Designer.vb">
+      <DependentUpon>CGSQ_JGD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单转加工单\CGSQ_JGD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单转加工单\CGSQ_JGD_detail.Designer.vb">
+      <DependentUpon>CGSQ_JGD_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="采购\采购申请单\采购申请单转加工单\CGSQ_JGD_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LoginForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MDIPForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事\员工资料维护\employee.resx">
+      <DependentUpon>employee.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事\员工资料维护\employee_cha.resx">
+      <DependentUpon>employee_cha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事\考勤\考勤审核\KQ_check.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQ_check.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事\考勤\考勤录入\KQ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事\考勤\考勤录入\KQ_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQ_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事\考勤\考勤录入\KQ_cha.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQ_cha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事\考勤\考勤录入\rs_choice.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rs_choice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事\考勤\考勤查询\KQ_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQ_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人事\部门资料维护\department.resx">
+      <DependentUpon>department.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\入库\入库重置\warehouse_undo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>warehouse_undo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\入库\移库入库\YKD_in.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>YKD_in.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\入库\退料入库\t_part_in_TL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_part_in_TL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\入库\采购入库\part_in_CG.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>part_in_CG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\入库\采购入库\part_in_CG_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>part_in_CG_RPT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\入库\采购入库\print_time.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>print_time.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\出库\出库重置\warehouse_undo_CK.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>warehouse_undo_CK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\出库\移库出库\yk_out.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>yk_out.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\出库\领料出库\part_out_LL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>part_out_LL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\出库\领料出库\part_out_LL_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>part_out_LL_RPT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\移库单\由领料单生成移库单\LL_YKD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LL_YKD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\移库单\移库单审核\YKD_check.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>YKD_check.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\移库单\移库单建立\YKD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>YKD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\移库单\移库单查询\YKD_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>YKD_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\调帐单\TZD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TZD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\调帐单\tzd_mod.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>tzd_mod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="公用\printView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>printView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="公用\warehouse_amount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>warehouse_amount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据\仓库\人员仓库对应关系\t_user_depot.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_user_depot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据\仓库\仓库资料\deport_info.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>deport_info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据\工厂\人员对应工厂\t_user_factory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_user_factory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据\工厂\工厂资料\factory_info.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>factory_info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据\技术\物料设置\Item_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Item_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据\采购\供应商信息\supplier.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>supplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础数据\销售\客户信息\customer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\加工费\加工费审核\t_outwork_check.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outwork_check.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\加工费\加工费建立\t_outwork.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outwork.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\加工费\加工费建立\t_outwork_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outwork_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\加工费\加工费建立\t_outwork_detail_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outwork_detail_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\加工费\加工费建立\t_outwork_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>t_outwork_RPT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\加工费\加工费打印重置\t_outwork_print_resetting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outwork_print_resetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\加工费\加工费查询\t_outwork_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outwork_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\工程单\工程审批单完工设置\project_WG.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>project_WG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\工程单\工程审批单审核\project_check.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>project_check.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\工程单\工程审批单审核\project_YQ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>project_YQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\工程单\工程审批单建立\CG_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CG_RPT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\工程单\工程审批单建立\project.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>project.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\工程单\工程审批单建立\project_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>project_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\工程单\工程审批单建立\project_detail_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>project_detail_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\工程单\工程审批单查询\project_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>project_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\生产单\下单\下单审核\XDSH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XDSH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\生产单\下单\下单建立\XDJL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XDJL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\生产单\下单\下单建立\XDJL_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XDJL_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\生产单\下单\下单查询\XDCX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XDCX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\生产单\下单\确认完成\QRWC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QRWC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\生产单\接单\接单价格确认\input_JG.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>input_JG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\生产单\接单\接单价格确认\JDJGQR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JDJGQR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\生产单\接单\接单完成\JDWC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JDWC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\生产单\接单\接单确认\JDQR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JDQR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\行政费用单\行政费用单审核\XZFY_check.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XZFY_check.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\行政费用单\行政费用单建立\XZFY_add_BM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XZFY_add_BM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\行政费用单\行政费用单建立\XZFYD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XZFYD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\行政费用单\行政费用单建立\XZFYD_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XZFYD_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\行政费用单\行政费用单建立\XZFYD_add_detail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XZFYD_add_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\行政费用单\行政费用单查询\XZFY_CX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XZFY_CX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\费用单\费用单审核\t_outlay_check.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outlay_check.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\费用单\费用单建立\FYD_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FYD_RPT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\费用单\费用单建立\t_outlay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outlay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\费用单\费用单建立\t_outlay_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outlay_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\费用单\费用单建立\t_outlay_add_detail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outlay_add_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\费用单\费用单建立\t_outlay_add_project.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outlay_add_project.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\费用单\费用单打印重置\t_outlay_print_resetting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outlay_print_resetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\费用单\费用单查询\t_outlay_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_outlay_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\退库单\退库单审核\t_part_in_check.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_part_in_check.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\退库单\退库单建立\t_part_in.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_part_in.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\退库单\退库单建立\t_part_in_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_part_in_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\退库单\退库单建立\t_part_in_add_detail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_part_in_add_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\退库单\退库单查询\t_part_in_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_part_in_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\领料单\领料单审核\t_part_out_check.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_part_out_check.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\领料单\领料单建立\t_part_out.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_part_out.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\领料单\领料单建立\t_part_out_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_part_out_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\领料单\领料单建立\t_part_out_add_detail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_part_out_add_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工程\领料单\领料单查询\t_part_out_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_part_out_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\产值查询\project_CZ_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>project_CZ_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\仓库综合查询\CK_ZHCX.resx">
+      <DependentUpon>CK_ZHCX.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\仓库综合查询\CK_ZHCX_cha.resx">
+      <DependentUpon>CK_ZHCX_cha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\供应商付款详情查询\T_GHFK_detail_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_GHFK_detail_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\供货商付款情况查询\T_GHFK_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_GHFK_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\供货入库明细查询\T_GHMX_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_GHMX_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\供货商付款情况查询\T_GHFK_quality_condition.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_GHFK_quality_condition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\加工费明细查询\JGF_detail_question.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JGF_detail_question.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\工程查询\project_detail_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>project_detail_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\工程查询\project_detail_quality_cha.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>project_detail_quality_cha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\工程账务信息查询\project_account_quility.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>project_account_quility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\库存查询\warehouse_question.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>warehouse_question.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\库存查询\warehouse_question_cha.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>warehouse_question_cha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\库存查询\warehouse_question_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>warehouse_question_RPT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\库存每月结转查询\T_KCMYJZ_question.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_KCMYJZ_question.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\报表查询\report_question.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>report_question.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\收款查询\T_JEYS_query.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_JEYS_query.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\物料查询供应商\GoodsQuesonGYS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GoodsQuesonGYS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\调帐记录查询\t_tzd_cx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_tzd_cx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\费用单明细查询\FYD_detail_question.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FYD_detail_question.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\月结日期设定\sys_month.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>sys_month.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\月结日期设定\sys_month_SC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>sys_month_SC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\月结日期设定\sys_month_TZ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>sys_month_TZ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\系统用户权限\add_user.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>add_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\系统用户权限\copy_user_right.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>copy_user_right.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\系统用户权限\rs_list.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rs_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\系统用户权限\sys_user_right.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>sys_user_right.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\系统角色权限\role_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>role_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\系统角色权限\sys_role_right.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>sys_role_right.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="视图\更改密码\newpassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>newpassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应付\应付发票审核\t_FPYF_check.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_FPYF_check.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应付\应付发票查询\t_FPYF_question_cha.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_FPYF_question_cha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应付\应付发票建立\FPYF_cha.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FPYF_cha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收发票\应收发票建立\FPYS_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FPYS_RPT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应付\应付发票建立\t_FPYF.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_FPYF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应付\应付发票建立\T_FPYF_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_FPYF_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应付\应付发票建立\T_FPYF_add_detail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_FPYF_add_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应付\应付发票建立\T_FPYF_add_JGD_detail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_FPYF_add_JGD_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应付\应付发票查询\t_FPYF_question.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_FPYF_question.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应付\应付发票核销\T_FPYF_HX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_FPYF_HX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收发票\应收发票审核\t_FPYS_check.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_FPYS_check.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收发票\应收发票建立\T_FPYS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_FPYS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收发票\应收发票建立\T_FPYS_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_FPYS_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收发票\应收发票建立\T_FPYS_add_detail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_FPYS_add_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收发票\应收发票查询\t_FPYS_question.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_FPYS_question.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收发票\应收发票核销\t_FPYS_HX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_FPYS_HX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收发票\应收发票核销\t_FPYS_HX_mod.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_FPYS_HX_mod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收金额\应收金额审核\T_jeys_check.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_jeys_check.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收金额\应收金额建立\T_JEYS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_JEYS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收金额\应收金额建立\T_JEYS_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_JEYS_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收金额\应收金额建立\T_JEYS_add_detail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>T_JEYS_add_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收金额\应收金额建立\T_JEYS_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>T_JEYS_RPT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收金额\应收金额查询\t_JEYS_question.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_JEYS_question.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务\应收\应收金额\应收金额核销\t_jeys_HX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>t_jeys_HX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\供货合同\供货合同审核\purchase_sh.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>purchase_sh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\供货合同\供货合同建立\GHHT_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GHHT_RPT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\供货合同\供货合同建立\purchase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>purchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\供货合同\供货合同建立\purchase_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>purchase_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\供货合同\供货合同建立\purchase_add_project.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>purchase_add_project.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\供货合同\供货合同建立\purchase_cha.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>purchase_cha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\供货合同\供货合同建立\purchase_detail_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>purchase_detail_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\供货合同\供货合同建立\purchase_warehouse.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>purchase_warehouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\供货合同\供货合同查询\purchase_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>purchase_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\供货合同\供货合同结案\purchase_JA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>purchase_JA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\采购申请单\采购申请单审核\CGSQ_SH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CGSQ_SH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\采购申请单\采购申请单建立\CGSQ_add_detail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CGSQ_add_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\采购申请单\采购申请单建立\CGSQ_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CGSQ_RPT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\采购申请单\采购申请单建立\CGSQ_warehouse.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CGSQ_warehouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\采购申请单\采购申请单建立\CGSQ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CGSQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\采购申请单\采购申请单建立\CGSQ_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CGSQ_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\采购申请单\采购申请单建立\CGSQ_add_project.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CGSQ_add_project.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\采购申请单\采购申请单查询\CGSQ_quality.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CGSQ_quality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\采购申请单\采购申请单转加工单\CGSQ_JGD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CGSQ_JGD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购\采购申请单\采购申请单转加工单\CGSQ_JGD_detail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CGSQ_JGD_detail.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="仓库\入库\采购入库\part_in_CG_RPT_T.xsc">
+      <DependentUpon>part_in_CG_RPT_T.xsd</DependentUpon>
+    </None>
+    <None Include="仓库\入库\采购入库\part_in_CG_RPT_T.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>part_in_CG_RPT_T.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="仓库\入库\采购入库\part_in_CG_RPT_T.xss">
+      <DependentUpon>part_in_CG_RPT_T.xsd</DependentUpon>
+    </None>
+    <None Include="仓库\出库\领料出库\part_out_LL_RPT_T.xsc">
+      <DependentUpon>part_out_LL_RPT_T.xsd</DependentUpon>
+    </None>
+    <None Include="仓库\出库\领料出库\part_out_LL_RPT_T.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>part_out_LL_RPT_T.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="仓库\出库\领料出库\part_out_LL_RPT_T.xss">
+      <DependentUpon>part_out_LL_RPT_T.xsd</DependentUpon>
+    </None>
+    <None Include="采购\供货合同\供货合同建立\GHHT_RPT_T.xsc">
+      <DependentUpon>GHHT_RPT_T.xsd</DependentUpon>
+    </None>
+    <None Include="采购\供货合同\供货合同建立\GHHT_RPT_T.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GHHT_RPT_T.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="采购\供货合同\供货合同建立\GHHT_RPT_T.xss">
+      <DependentUpon>GHHT_RPT_T.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{2A75196C-D9EB-4129-B803-931327F72D5C}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="工程\加工费\加工费建立\t_outwork_RPT_T.xsc">
+      <DependentUpon>t_outwork_RPT_T.xsd</DependentUpon>
+    </None>
+    <None Include="工程\加工费\加工费建立\t_outwork_RPT_T.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>t_outwork_RPT_T.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="工程\加工费\加工费建立\t_outwork_RPT_T.xss">
+      <DependentUpon>t_outwork_RPT_T.xsd</DependentUpon>
+    </None>
+    <None Include="工程\工程单\工程审批单建立\GC_T.xsc">
+      <DependentUpon>GC_T.xsd</DependentUpon>
+    </None>
+    <None Include="工程\工程单\工程审批单建立\GC_T.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GC_T.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="工程\工程单\工程审批单建立\GC_T.xss">
+      <DependentUpon>GC_T.xsd</DependentUpon>
+    </None>
+    <None Include="工程\费用单\费用单建立\FYD_T.xsc">
+      <DependentUpon>FYD_T.xsd</DependentUpon>
+    </None>
+    <None Include="工程\费用单\费用单建立\FYD_T.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FYD_T.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="工程\费用单\费用单建立\FYD_T.xss">
+      <DependentUpon>FYD_T.xsd</DependentUpon>
+    </None>
+    <None Include="查询\库存查询\warehouse_question_T.xsc">
+      <DependentUpon>warehouse_question_T.xsd</DependentUpon>
+    </None>
+    <None Include="查询\库存查询\warehouse_question_T.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>warehouse_question_T.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="查询\库存查询\warehouse_question_T.xss">
+      <DependentUpon>warehouse_question_T.xsd</DependentUpon>
+    </None>
+    <None Include="财务\应收\应收发票\应收发票建立\FPYS_T.xsc">
+      <DependentUpon>FPYS_T.xsd</DependentUpon>
+    </None>
+    <None Include="财务\应收\应收发票\应收发票建立\FPYS_T.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FPYS_T.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="财务\应收\应收发票\应收发票建立\FPYS_T.xss">
+      <DependentUpon>FPYS_T.xsd</DependentUpon>
+    </None>
+    <None Include="财务\应收\应收金额\应收金额建立\T_JEYS_T.xsc">
+      <DependentUpon>T_JEYS_T.xsd</DependentUpon>
+    </None>
+    <None Include="财务\应收\应收金额\应收金额建立\T_JEYS_T.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>T_JEYS_T.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="财务\应收\应收金额\应收金额建立\T_JEYS_T.xss">
+      <DependentUpon>T_JEYS_T.xsd</DependentUpon>
+    </None>
+    <None Include="采购\采购申请单\采购申请单建立\CGSQ_RPT_T.xsc">
+      <DependentUpon>CGSQ_RPT_T.xsd</DependentUpon>
+    </None>
+    <None Include="采购\采购申请单\采购申请单建立\CGSQ_RPT_T.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CGSQ_RPT_T.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="采购\采购申请单\采购申请单建立\CGSQ_RPT_T.xss">
+      <DependentUpon>CGSQ_RPT_T.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GANT.ico" />
+    <Content Include="GANT1.ico" />
+    <Content Include="Resources\mStart.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
